@@ -11,10 +11,11 @@
   "Plain Theme for Emacs")
 
 (let ((background "black")
-      (foreground "grey90")
+      (foreground "grey80")
+      (whitespace "grey40")
       (cursor "white")
-      ;;(border background)
-      ;;(minibuffer cursor)
+      (mismatch "yellow")
+      (paren "grey60")
       (region "grey20")
       (failure "red"))
 
@@ -31,14 +32,35 @@
    `(font-lock-doc-face ((t (:foreground ,foreground))))
    `(font-lock-function-name-face ((t (:foreground ,foreground))))
    `(font-lock-keyword-face ((t (:foreground ,foreground))))
-   `(font-lock-preprocessor-face ((t (:foreground ,foreground))))
+   `(font-lock-negation-char-face ((t (:foreground ,foreground))))
    `(font-lock-reference-face ((t (:foreground ,foreground))))
    `(font-lock-string-face ((t (:foreground ,foreground))))
    `(font-lock-type-face ((t (:foreground ,foreground))))
    `(font-lock-variable-name-face ((t (:foreground ,foreground))))
+   `(font-lock-warning-face ((t (:foreground ,foreground))))
    `(fringe ((t (:background ,background :foreground , foreground))))
    `(highlight ((t nil)))
-               ))
+
+   `(ido-first-match ((t (:foreground ,foreground))))
+   `(ido-only-match ((t (:foreground ,foreground))))
+   `(ido-subdir ((t (:foreground ,foreground))))
+
+   `(isearch ((t (:background ,background :foreground ,foreground))))
+   `(minibuffer-prompt ((t (:foreground ,foreground))))
+
+   `(region ((t (:background ,region :foreground ,foreground))))
+
+   `(show-paren-match ((t (:background ,paren))))
+   `(show-paren-mismatch ((t (:background ,mismatch))))
+
+   `(whitespace-empty ((t (:background ,failure))))
+   `(whitespace-hspace ((t (:background ,background))))
+   `(whitespace-indentation ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-line ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-newline ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-space ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-tab ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-trailing ((t (:background ,failure))))))
 
 ;;;###autoload
 (when load-file-name
