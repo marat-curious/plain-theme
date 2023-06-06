@@ -22,30 +22,35 @@
   (custom-theme-set-faces
    'plain
 
-   ;;generic
    `(cursor ((t (:background ,foreground))))
    `(custom-variable-tag ((t (:foreground ,foreground))))
    `(default ((t (:background ,background :foreground ,foreground))))
-   `(font-lock-builtin-face ((t (:background ,background :foreground ,foreground))))
+   `(escape-glyph ((t (:background ,background :foreground ,foreground))))
+
+   `(font-lock-builtin-face ((t (:foreground ,foreground))))
    `(font-lock-comment-face ((t (:foreground ,foreground))))
    `(font-lock-constant-face ((t (:foreground ,foreground))))
    `(font-lock-doc-face ((t (:foreground ,foreground))))
    `(font-lock-function-name-face ((t (:foreground ,foreground))))
    `(font-lock-keyword-face ((t (:foreground ,foreground))))
    `(font-lock-negation-char-face ((t (:foreground ,foreground))))
+   `(font-lock-preprocessor-face ((t (:foreground ,foreground))))
    `(font-lock-reference-face ((t (:foreground ,foreground))))
    `(font-lock-string-face ((t (:foreground ,foreground))))
    `(font-lock-type-face ((t (:foreground ,foreground))))
    `(font-lock-variable-name-face ((t (:foreground ,foreground))))
    `(font-lock-warning-face ((t (:foreground ,foreground))))
-   `(fringe ((t (:background ,background :foreground , foreground))))
+
+   `(fringe ((t (:background ,background :foreground ,foreground))))
    `(highlight ((t nil)))
 
    `(ido-first-match ((t (:foreground ,foreground))))
    `(ido-only-match ((t (:foreground ,foreground))))
    `(ido-subdir ((t (:foreground ,foreground))))
 
-   `(isearch ((t (:background ,background :foreground ,foreground))))
+   `(isearch ((t (:background ,whitespace :foreground ,foreground))))
+   `(lazy-highlight ((t (:background ,whitespace :foreground ,foreground))))
+   `(link ((t (:foreground ,foreground))))
    `(minibuffer-prompt ((t (:foreground ,foreground))))
 
    `(region ((t (:background ,region :foreground ,foreground))))
