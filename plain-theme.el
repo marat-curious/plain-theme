@@ -11,11 +11,11 @@
   "Plain Theme for Emacs")
 
 (let ((background "black")
-      (foreground "grey80")
-      (whitespace "grey40")
+      (foreground "grey70")
+      (whitespace "grey30")
       (cursor "white")
       (mismatch "yellow")
-      (paren "grey60")
+      (paren "grey50")
       (region "grey20")
       (failure "red"))
 
