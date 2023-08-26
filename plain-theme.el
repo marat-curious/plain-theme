@@ -13,10 +13,8 @@
 (let ((background "black")
       (foreground "grey70")
       (whitespace "grey30")
-      (cursor "white")
       (mismatch "yellow")
-      (paren "grey50")
-      (region "grey20")
+      (region "orange")
       (failure "red"))
 
   (custom-theme-set-faces
@@ -53,10 +51,10 @@
    `(link ((t (:foreground ,foreground))))
    `(minibuffer-prompt ((t (:foreground ,foreground))))
 
-   `(region ((t (:background ,region :foreground ,foreground))))
+   `(region ((t (:background ,region :foreground ,background))))
 
-   `(show-paren-match ((t (:background ,paren))))
-   `(show-paren-mismatch ((t (:background ,mismatch))))
+   `(show-paren-match ((t (:background ,region :foreground ,background))))
+   `(show-paren-mismatch ((t (:background ,mismatch :foreground ,background))))
 
    `(whitespace-empty ((t (:background ,failure))))
    `(whitespace-hspace ((t (:background ,background))))
