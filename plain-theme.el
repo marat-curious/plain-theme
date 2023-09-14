@@ -59,7 +59,7 @@
    `(whitespace-empty ((t (:background ,failure))))
    `(whitespace-hspace ((t (:background ,background))))
    `(whitespace-indentation ((t (:background unspecified :foreground ,whitespace))))
-   `(whitespace-line ((t (:background unspecified :foreground ,whitespace))))
+   `(whitespace-line ((t (:background unspecified :foreground ,foreground))))
    `(whitespace-newline ((t (:background unspecified :foreground ,whitespace))))
    `(whitespace-space ((t (:background unspecified :foreground ,whitespace))))
    `(whitespace-tab ((t (:background unspecified :foreground ,whitespace))))
