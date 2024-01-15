@@ -23,6 +23,7 @@
    `(cursor ((t (:background ,foreground))))
    `(custom-variable-tag ((t (:foreground ,foreground))))
    `(default ((t (:background ,background :foreground ,foreground))))
+   `(error ((t (:foreground ,failure))))
    `(escape-glyph ((t (:background ,background :foreground ,foreground))))
 
    `(font-lock-builtin-face ((t (:foreground ,foreground))))
@@ -55,6 +56,8 @@
 
    `(show-paren-match ((t (:background ,region :foreground ,background))))
    `(show-paren-mismatch ((t (:background ,mismatch :foreground ,background))))
+
+   `(warning ((t (:foreground ,region))))
 
    `(whitespace-empty ((t (:background ,failure))))
    `(whitespace-hspace ((t (:background ,background))))
