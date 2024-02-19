@@ -43,6 +43,9 @@
    `(fringe ((t (:background ,background :foreground ,foreground))))
    `(highlight ((t nil)))
 
+   `(eglot-diagnostic-tag-deprecated-face ((t (:strike-through t))))
+   `(eglot-diagnostic-tag-unnecessary-face ((t (:strike-through t))))
+
    `(ido-first-match ((t (:foreground ,foreground))))
    `(ido-only-match ((t (:foreground ,foreground))))
    `(ido-subdir ((t (:foreground ,foreground))))
@@ -62,7 +65,7 @@
    `(whitespace-empty ((t (:background ,failure))))
    `(whitespace-hspace ((t (:background ,background))))
    `(whitespace-indentation ((t (:background unspecified :foreground ,whitespace))))
-   `(whitespace-line ((t (:background unspecified :foreground ,foreground))))
+   `(whitespace-line ((t (:background unspecified :foreground ,whitespace))))
    `(whitespace-newline ((t (:background unspecified :foreground ,whitespace))))
    `(whitespace-space ((t (:background unspecified :foreground ,whitespace))))
    `(whitespace-tab ((t (:background unspecified :foreground ,whitespace))))
